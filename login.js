@@ -28,7 +28,7 @@ document.getElementById('login-form').addEventListener('submit', function(event)
         (role === 'admin' && username === 'admin' && password === 'a123')) {
 
         // Redirect to respective dashboard
-        window.location.href = `/src/pages/${role}_dashboard.html`;
+        window.location.href = `${role}_dashboard.html`;
     } else {
         alert('Invalid credentials');
     }
